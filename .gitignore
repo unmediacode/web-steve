@@ -116,7 +116,6 @@ dist
 
 # Vite build output
 dist
-build
 data/*.json
 
 # OS files
