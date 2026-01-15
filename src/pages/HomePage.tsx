@@ -103,7 +103,7 @@ export default function HomePage() {
               duration="32 min"
               description="Filmed in Galicia and in the Galician language. The film tells the life story of Manuel Barros, a shipyard worker with communist leanings during the Franco dictatorship."
               videoUrl="https://www.youtube.com/embed/qtfe9KxzuGk"
-              thumbnailUrl="/images/films/worker.png"
+              thumbnailUrl="/images/films/worker.jpg"
             />
             <VideoCard
               title="Nicolas Economou"
@@ -119,7 +119,7 @@ export default function HomePage() {
               duration="38 min"
               description="A three-year observational study of XP School in Doncaster and its expeditionary learning approach."
               videoUrl="https://www.youtube.com/embed/MwrtCFGGUaE"
-              thumbnailUrl="/images/films/xp-school.png"
+              thumbnailUrl="/images/films/xp-school.jpg"
             />
           </div>
         </div>
