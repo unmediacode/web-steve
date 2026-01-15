@@ -4,10 +4,6 @@ import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { Textarea } from "../components/ui/textarea";
 import { toast } from "sonner@2.0.3";
-import {
-  projectId,
-  publicAnonKey,
-} from "../utils/supabase/info";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 
@@ -24,17 +20,13 @@ export function QuickContactPage() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch(
-        `https://${projectId}.supabase.co/functions/v1/make-server-39720f7e/send-quick-contact`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${publicAnonKey}`,
-          },
-          body: JSON.stringify(formData),
+      const response = await fetch('/api/contact', {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-      );
+        body: JSON.stringify(formData),
+      });
 
       if (!response.ok) {
         const errorText = await response.text();
