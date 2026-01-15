@@ -2,14 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { VideoCard } from '../components/VideoCard';
-import nicolasEconomouThumbnail from 'figma:asset/541fe880cdb7b8618f0ba45c0974f6c95986e572.png';
-import garyLinekerThumbnail from 'figma:asset/71ae328e6eb7af3e81fca580a4b69f420db87143.png';
-import xpSchoolThumbnail from 'figma:asset/89369ff84615d66932f9f29f242669935f2f4dc3.png';
-import redOilThumbnail from 'figma:asset/e66dffe74735c938a0d34723aa2b5d60dd43634f.png';
-import workerThumbnail from 'figma:asset/fea342814a0457061ff7af1352e18ac10e5b117e.png';
-import emmelineThumbnail from 'figma:asset/ee6979c8bbe3714fbf51c62778fb0770974e5861.png';
-import daveLeeThumbnail from 'figma:asset/755eaf3e9f132a77e7ae876ce1c855b4826a8e09.png';
-import daveLee3Thumbnail from 'figma:asset/bc3fef842eb17791f51ca10416690031c385cd1b.png';
+import filmData from '../data/films.json';
 
 export default function FilmsPage() {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -22,10 +15,10 @@ export default function FilmsPage() {
   const rotatingWords = ['Documentaries', 'Biographical Films', 'Music Portraits', 'Portraits'];
   
   const thumbnails = [
-    nicolasEconomouThumbnail,
-    xpSchoolThumbnail,
-    redOilThumbnail,
-    workerThumbnail
+    '/images/films/nicolas-economou.png',
+    '/images/films/xp-school.png',
+    '/images/films/red-oil.png',
+    '/images/films/worker.png'
   ];
 
   useEffect(() => {
@@ -55,89 +48,11 @@ export default function FilmsPage() {
     { id: 'music', label: 'Music & Portraits' },
   ];
 
-  // Films reales de Steve Sklair
-  const films = [
-    {
-      id: 1,
-      title: 'Red Oil',
-      year: '2006',
-      duration: '58 min',
-      description: 'A unique look inside PDVSA, Venezuela\'s state oil company during the Chávez era. With dynamic narrative rhythm, the film examines the relationship between petroleum, political power and revolutionary ideology.',
-      category: 'documentaries',
-      videoUrl: undefined, // Sin enlace disponible
-      thumbnailUrl: redOilThumbnail
-    },
-    {
-      id: 3,
-      title: 'Above All Compassion: The Story of XP School',
-      year: '2020',
-      duration: '38 min',
-      description: 'A three–year observational study of XP School in Doncaster, whose expeditionary learning approach has reshaped student confidence and academic success. A close, human look at an educational project built on empathy and experience.',
-      category: 'documentaries',
-      videoUrl: 'https://www.youtube.com/embed/MwrtCFGGUaE',
-      thumbnailUrl: xpSchoolThumbnail
-    },
-    {
-      id: 4,
-      title: 'A Worker of the 20th Century',
-      year: '1998',
-      duration: '32 min',
-      description: 'Filmed in Galicia and in the Galician language. The film tells the life story of Manuel Barros, a shipyard worker with communist leanings during the Franco dictatorship. Drawing from his written memoir and family interviews, the documentary offers an evocative portrait of working–class life lived under repression.',
-      category: 'documentaries',
-      videoUrl: 'https://www.youtube.com/embed/qtfe9KxzuGk',
-      thumbnailUrl: workerThumbnail
-    },
-    {
-      id: 5,
-      title: 'Nicolas Economou',
-      year: '2014',
-      duration: '1h 35min',
-      description: 'An intimate portrait of Cypriot pianist and composer Nicolas Economou. From his early childhood improvisations to international recognition, the film explores his musical sensitivity, artistic depth, and cultural legacy.',
-      category: 'biographical',
-      videoUrl: 'https://www.youtube.com/embed/OF0t9Q0FgBg',
-      thumbnailUrl: nicolasEconomouThumbnail
-    },
-    {
-      id: 6,
-      title: 'EMMELINE The Suffragette Movement',
-      year: '',
-      duration: '2h 20min',
-      description: 'A production of Beatrice Hyde\'s play about Emmeline Pankhurst. I organised the shoot. Filmed the production on four cameras and then edited it for distribution.',
-      category: 'documentaries',
-      videoUrl: 'https://www.youtube.com/embed/Cgf6xcIVujE',
-      thumbnailUrl: emmelineThumbnail
-    },
-    {
-      id: 7,
-      title: 'Dave Lee\'s Jazz Tales 10 "Being Cool"',
-      year: '',
-      duration: '5 min',
-      description: 'Dave Lee\'s story of being cool as a jazz musician in Britain at the end of the 1950\'s, and how, whatever happens, you stay cool!',
-      category: 'music',
-      videoUrl: 'https://www.youtube.com/embed/ke3-F1QCHNw',
-      thumbnailUrl: daveLeeThumbnail
-    },
-    {
-      id: 8,
-      title: 'Dave Lee\'s Jazz Tales 3 - Duke Ellington',
-      year: '2021',
-      duration: '4min 29s',
-      description: 'Dave tells the tale of playing four handed piano with Duke Ellington while touring with Johnny Dankworth. He is playing \'Mood Indigo\' (one of the pieces he played with the Duke).',
-      category: 'music',
-      videoUrl: 'https://player.vimeo.com/video/645142961',
-      thumbnailUrl: daveLee3Thumbnail
-    },
-    {
-      id: 2,
-      title: 'The Man Who Loves Gary Lineker',
-      year: '1993',
-      duration: '1h 03min',
-      description: 'The personal video diary of Ylli Hasani, a rural doctor in Albania, filmed during a period of political transition and hope. His fluent English learned from BBC radio, his admiration for Gary Lineker, and his struggle to obtain a visa reveal a life marked by dignity, resilience and longing.',
-      category: 'documentaries',
-      videoUrl: 'https://player.vimeo.com/video/638659899?h=7ad1aa7fd5&byline=0&portrait=0',
-      thumbnailUrl: garyLinekerThumbnail
-    },
-  ];
+  // Map JSON data to expected format (ensure videoUrl is string | undefined)
+  const films = filmData.map(film => ({
+    ...film,
+    videoUrl: film.videoUrl || undefined
+  }));
 
   const filteredFilms = selectedCategory === 'all' 
     ? films 

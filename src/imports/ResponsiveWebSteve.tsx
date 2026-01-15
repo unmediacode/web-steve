@@ -1,7 +1,5 @@
 import svgPaths from "./svg-xuw6fhjzwm";
-import imgImageWithFallback from "figma:asset/fea342814a0457061ff7af1352e18ac10e5b117e.png";
-import imgImageWithFallback1 from "figma:asset/541fe880cdb7b8618f0ba45c0974f6c95986e572.png";
-import imgImageWithFallback2 from "figma:asset/89369ff84615d66932f9f29f242669935f2f4dc3.png";
+
 
 function Heading2() {
   return (
@@ -67,7 +65,7 @@ function Container3() {
 function ImageWithFallback() {
   return (
     <div className="absolute h-[218.992px] left-0 top-0 w-[389.328px]" data-name="ImageWithFallback">
-      <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={imgImageWithFallback} />
+      <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src="/images/films/worker.png" />
     </div>
   );
 }
@@ -184,7 +182,7 @@ function Container10() {
 function ImageWithFallback1() {
   return (
     <div className="absolute h-[219px] left-0 top-0 w-[389.336px]" data-name="ImageWithFallback">
-      <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={imgImageWithFallback1} />
+      <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src="/images/films/nicolas-economou.png" />
     </div>
   );
 }
@@ -301,7 +299,7 @@ function Container17() {
 function ImageWithFallback2() {
   return (
     <div className="absolute h-[219px] left-0 top-0 w-[389.336px]" data-name="ImageWithFallback">
-      <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={imgImageWithFallback2} />
+      <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src="/images/films/xp-school.png" />
     </div>
   );
 }
