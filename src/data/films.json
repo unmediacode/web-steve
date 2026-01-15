@@ -7,7 +7,7 @@
         "description": "A unique look inside PDVSA, Venezuela's state oil company during the Chávez era. With dynamic narrative rhythm, the film examines the relationship between petroleum, political power and revolutionary ideology.",
         "category": "documentaries",
         "videoUrl": null,
-        "thumbnailUrl": "/images/films/red-oil.png"
+        "thumbnailUrl": "/images/films/red-oil.jpg"
     },
     {
         "id": 3,
@@ -17,7 +17,7 @@
         "description": "A three–year observational study of XP School in Doncaster, whose expeditionary learning approach has reshaped student confidence and academic success. A close, human look at an educational project built on empathy and experience.",
         "category": "documentaries",
         "videoUrl": "https://www.youtube.com/embed/MwrtCFGGUaE",
-        "thumbnailUrl": "/images/films/xp-school.png"
+        "thumbnailUrl": "/images/films/xp-school.jpg"
     },
     {
         "id": 4,
@@ -27,7 +27,7 @@
         "description": "Filmed in Galicia and in the Galician language. The film tells the life story of Manuel Barros, a shipyard worker with communist leanings during the Franco dictatorship. Drawing from his written memoir and family interviews, the documentary offers an evocative portrait of working–class life lived under repression.",
         "category": "documentaries",
         "videoUrl": "https://www.youtube.com/embed/qtfe9KxzuGk",
-        "thumbnailUrl": "/images/films/worker.png"
+        "thumbnailUrl": "/images/films/worker.jpg"
     },
     {
         "id": 5,
@@ -47,7 +47,7 @@
         "description": "A production of Beatrice Hyde's play about Emmeline Pankhurst. I organised the shoot. Filmed the production on four cameras and then edited it for distribution.",
         "category": "documentaries",
         "videoUrl": "https://www.youtube.com/embed/Cgf6xcIVujE",
-        "thumbnailUrl": "/images/films/emmeline.png"
+        "thumbnailUrl": "/images/films/emmeline.jpg"
     },
     {
         "id": 7,
@@ -57,7 +57,7 @@
         "description": "Dave Lee's story of being cool as a jazz musician in Britain at the end of the 1950's, and how, whatever happens, you stay cool!",
         "category": "music",
         "videoUrl": "https://www.youtube.com/embed/ke3-F1QCHNw",
-        "thumbnailUrl": "/images/films/dave-lee.png"
+        "thumbnailUrl": "/images/films/dave-lee.jpg"
     },
     {
         "id": 8,
@@ -67,7 +67,7 @@
         "description": "Dave tells the tale of playing four handed piano with Duke Ellington while touring with Johnny Dankworth. He is playing 'Mood Indigo' (one of the pieces he played with the Duke).",
         "category": "music",
         "videoUrl": "https://player.vimeo.com/video/645142961",
-        "thumbnailUrl": "/images/films/dave-lee-3.png"
+        "thumbnailUrl": "/images/films/dave-lee-3.jpg"
     },
     {
         "id": 2,
@@ -77,6 +77,6 @@
         "description": "The personal video diary of Ylli Hasani, a rural doctor in Albania, filmed during a period of political transition and hope. His fluent English learned from BBC radio, his admiration for Gary Lineker, and his struggle to obtain a visa reveal a life marked by dignity, resilience and longing.",
         "category": "documentaries",
         "videoUrl": "https://player.vimeo.com/video/638659899?h=7ad1aa7fd5&byline=0&portrait=0",
-        "thumbnailUrl": "/images/films/gary-lineker.png"
+        "thumbnailUrl": "/images/films/gary-lineker.jpg"
     }
 ]
