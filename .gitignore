@@ -116,7 +116,7 @@ dist
 
 # Vite build output
 dist
-build
+# build
 
 # OS files
 .DS_Store
