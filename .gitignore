@@ -1,0 +1,20 @@
+# Logs
+api/submissions.log
+api/emails_local.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node (if added later)
+node_modules/
+
+# Environment files
+.env
+.env.local

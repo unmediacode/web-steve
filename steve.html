@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Steve | Steve Sklair</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .animate-gradient-steve {
+            background-size: 200% 200%;
+            animation: gradient-steve 10s ease infinite;
+        }
+
+        @keyframes gradient-steve {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER_PLACEHOLDER -->
+    <header class="header sticky top-0 z-40" style="background-color: var(--dark-blue); color: white;">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="w-32 h-10 block">
+                <!-- Sklair Logo reconstructed -->
+                <div class="relative size-full">
+                    <div class="absolute" style="top: 4.98%; right: 11.76%; bottom: 4.3%; left: 73.73%;">
+                        <svg class="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 18 38">
+                            <path
+                                d="M13.079 37.1375V19.6873H9.28948L4.71052 37.1375H0L4.97368 18.5128C3.94737 18.1493 3.10526 17.562 2.47368 16.751C1.8421 15.94 1.36842 14.9333 1.07895 13.7588C0.789475 12.5842 0.657895 11.2699 0.657895 9.84367C0.657895 7.49461 1.02632 5.593 1.76316 4.13882C2.5 2.68464 3.63158 1.62197 5.1579 0.978774C6.68421 0.307615 8.60527 0 10.9474 0H18V37.1934H13.079V37.1375ZM13.079 3.66341H10.9211C8.71053 3.66341 7.21053 4.13882 6.47369 5.11759C5.73684 6.0684 5.34211 7.66241 5.34211 9.81571C5.34211 11.4097 5.55263 12.6402 5.94737 13.5351C6.34211 14.4299 6.97369 15.0452 7.84211 15.4087C8.71053 15.7722 9.84211 15.968 11.2105 15.968H13.079V3.66341Z"
+                                fill="#D30000" />
+                        </svg>
+                    </div>
+                    <div class="absolute" style="top: 9.17%; right: 1.97%; bottom: 50.83%; left: 90.62%;">
+                        <svg class="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 10 17">
+                            <path
+                                d="M8.13158 0.0171926L0 1.86288V6.19745L5.71053 5.07885V11.2871L0 10.1685V14.559L8.10526 16.3767C8.65789 16.5165 9.18421 16.0411 9.18421 15.4259V0.968002C9.21052 0.352772 8.68421 -0.0946673 8.13158 0.0171926Z"
+                                fill="#D30000" />
+                        </svg>
+                    </div>
+                    <div class="absolute" style="top: 4.37%; right: 83.81%; bottom: 3.15%; left: 2%;">
+                        <svg class="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 18 38">
+                            <path
+                                d="M9.28947 37.9205C7.26316 37.9205 5.60526 37.4731 4.26316 36.5502C2.92105 35.6274 1.92105 34.369 1.21053 32.747C0.526316 31.125 0.105263 29.2514 0 27.0981L4.31579 25.8676C4.39474 27.182 4.60526 28.4404 4.89474 29.6708C5.18421 30.9013 5.68421 31.908 6.39474 32.6911C7.07895 33.4741 8.05263 33.8656 9.28947 33.8656C10.5526 33.8656 11.5263 33.502 12.1579 32.747C12.8158 31.9919 13.1316 30.9293 13.1316 29.5031C13.1316 27.8252 12.7632 26.4549 12.0526 25.4481C11.3421 24.4134 10.4211 23.3787 9.3421 22.344L3.44737 16.807C2.28947 15.7443 1.44737 14.5698 0.894737 13.2834C0.342105 12.0249 0.0789474 10.4589 0.0789474 8.58525C0.0789474 5.87265 0.81579 3.74731 2.28947 2.2372C3.76316 0.727089 5.76316 0 8.28947 0C9.68421 0 10.8947 0.195755 11.9474 0.587265C13 0.978774 13.8684 1.56604 14.5789 2.34906C15.2895 3.13208 15.8421 4.13882 16.2632 5.36928C16.6842 6.57177 16.9737 7.99798 17.1053 9.61995L12.9474 10.7945C12.8684 9.56402 12.6842 8.44542 12.4211 7.41072C12.1579 6.37602 11.7105 5.56503 11.0526 4.92184C10.3947 4.30661 9.47368 3.97103 8.26316 3.97103C7.05263 3.97103 6.10526 4.30661 5.42105 5.00573C4.73684 5.70486 4.39474 6.7116 4.39474 8.05391C4.39474 9.17251 4.57895 10.1233 4.94737 10.8504C5.31579 11.5775 5.89474 12.3326 6.68421 13.0876L12.6053 18.5967C13.9211 19.8272 15.1053 21.2813 16.1053 22.9872C17.1053 24.6931 17.6053 26.7066 17.6053 29.0276C17.6053 30.8733 17.2368 32.4394 16.5263 33.7817C15.8158 35.124 14.8158 36.1308 13.5789 36.8299C12.3684 37.5849 10.9211 37.9205 9.28947 37.9205Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <div class="absolute" style="top: 5.18%; right: 65.73%; bottom: 4.1%; left: 19.31%;">
+                        <svg class="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 19 38">
+                            <path
+                                d="M0 37.1934V0H4.86842V17.534L12.8947 0H17.4211L10.5263 16.3875L18.5526 37.1934H13.7895L7.10526 19.7433L4.86842 24.0499V37.1655H0V37.1934Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <div class="absolute" style="top: 5.18%; right: 52.31%; bottom: 4.1%; left: 36.55%;">
+                        <svg class="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 14 38">
+                            <path d="M0 37.1934V0H4.86842V33.4741H13.8158V37.1934H0Z" fill="white" />
+                        </svg>
+                    </div>
+                    <div class="absolute" style="top: 5.18%; right: 35.36%; bottom: 4.1%; left: 48.83%;">
+                        <svg class="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 38">
+                            <path
+                                d="M0 37.1934L7.42105 0H12.1316L19.6053 37.1934H14.9737L13.3684 27.8252H6.23684L4.55263 37.1934H0ZM6.92105 24.1058H12.7632L9.81579 7.35479L6.92105 24.1058Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <div class="absolute" style="top: 5.18%; right: 28.42%; bottom: 4.1%; left: 67.72%;">
+                        <svg class="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 5 38">
+                            <path d="M0 37.1934V0H4.78947V37.1934H0Z" fill="white" />
+                        </svg>
+                    </div>
+                </div>
+            </a>
+            <nav class="hidden md:block">
+                <ul class="flex items-center gap-8">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="films.html" class="nav-link">Films</a></li>
+                    <li><a href="steve.html" class="nav-link active">Steve</a></li>
+                    <li><a href="testimonials.html" class="nav-link">Working With Steve</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-white" id="mobile-menu-btn" aria-label="Toggle menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden md:hidden border-t border-white/20 bg-[#001A28]">
+            <ul class="flex flex-col gap-4 px-6 py-4">
+                <li><a href="index.html" class="block py-2 hover:text-gray-300">Home</a></li>
+                <li><a href="films.html" class="block py-2 hover:text-gray-300">Films</a></li>
+                <li><a href="steve.html" class="block py-2 hover:text-gray-300">Steve</a></li>
+                <li><a href="testimonials.html" class="block py-2 hover:text-gray-300">Working With Steve</a></li>
+                <li><a href="contact.html" class="block py-2 hover:text-gray-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="steve-hero">
+            <div class="steve-hero-bg" style="background-image: url('https://sklairfilms.com/wp-content/uploads/2023/01/NSOP6212.jpg');"></div>
+            <div class="steve-hero-overlay"></div>
+            <div class="steve-hero-content">
+                <span class="steve-hero-label">Award-Winning Filmmaker</span>
+                <h1 class="steve-hero-title">Steve Sklair</h1>
+                <p class="steve-hero-role">Camera · Editor · Director</p>
+                <p class="steve-hero-description">An all-round filmmaker with decades of experience working with all the major UK broadcasters, crafting honest documentaries told with a human gaze.</p>
+                <div class="steve-hero-cta">
+                    <a href="films.html" class="steve-hero-btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                        View My Work
+                    </a>
+                    <a href="contact.html" class="steve-hero-btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+            <div class="steve-hero-scroll">
+                <span>Scroll to explore</span>
+                <div class="steve-hero-scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- Biography Section -->
+        <section class="steve-bio-section">
+            <div class="container">
+                <div class="steve-bio-grid">
+                    <div class="steve-bio-sidebar">
+                        <div class="steve-bio-image">
+                            <img src="assets/steve_bio_boot.jpg" alt="Steve Sklair">
+                        </div>
+                        <div class="steve-bio-quick-facts">
+                            <h3>Quick Facts</h3>
+                            <ul>
+                                <li><strong>Based:</strong> London, UK</li>
+                                <li><strong>Experience:</strong> 30+ Years</li>
+                                <li><strong>Specialty:</strong> Documentaries</li>
+                                <li><strong>Software:</strong> Final Cut Pro</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="steve-bio-content">
+                        <span class="steve-section-label">Biography</span>
+                        <h2 class="steve-section-title">The Story Behind the Lens</h2>
+                        <div class="steve-bio-text">
+                            <p>Steve started his professional television work in editing and graduated to Production and camerawork. He had two long spells at the BBC and while there one of his films he directed, a Video Diary, <strong>'The Man Who Loves Gary Lineker'</strong> won a <strong>BAFTA for Best Single Documentary</strong>.</p>
+                            <p>He also won a <strong>UNICEF award</strong> for a film 'furthering the rights of the child' (Child Slave Rescue). He has worked as Series Producer on many factual series, often creating the style and feel of first run series.</p>
+                            <p>Before working for the BBC his first film as director was 'The Black and White Pirate Show' – a one hour documentary about pirate radio for Channel 4.</p>
+                            <p>He has worked on a lot of long form documentaries, cutting his teeth on Video Diaries where most diaries were one hour or longer. His particular skill is in keeping people's interest and enthusiasm over the span of a longer film.</p>
+                            <p>More recently he directed, wrote, shot and edited a 90 minute feature documentary about the Cypriot classical pianist Nicolas Economou. He also made 'A Worker of the 20th Century' for TVG (Galicia TV) in Galician about a communist living under the Franco dictatorship.</p>
+                            <p>Steve has also been working in videos about education for the last 4 years in conjunction with the National Education Union. He has a real eye for capturing the most important moments with children in schools and he gets on with everyone, helping to put interviewees at ease with the camera.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="steve-skills-section">
+            <div class="container">
+                <div class="steve-skills-header">
+                    <span class="steve-section-label">What I Do</span>
+                    <h2 class="steve-section-title">Skills & Expertise</h2>
+                </div>
+                <div class="steve-skills-grid">
+                    <div class="steve-skill-card">
+                        <div class="steve-skill-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" />
+                                <circle cx="12" cy="13" r="3" />
+                            </svg>
+                        </div>
+                        <h3 class="steve-skill-title">Cinematography</h3>
+                        <p class="steve-skill-desc">Expert camera operation across multiple formats, from intimate interviews to dynamic action sequences.</p>
+                        <ul class="steve-skill-list">
+                            <li>Sony Z90</li>
+                            <li>Panasonic GH5</li>
+                            <li>DJI Mini 3 Drone</li>
+                        </ul>
+                    </div>
+                    <div class="steve-skill-card">
+                        <div class="steve-skill-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="18" height="18" x="3" y="3" rx="2" />
+                                <path d="M7 3v18" />
+                                <path d="M3 7.5h4" />
+                                <path d="M3 12h18" />
+                                <path d="M17 3v18" />
+                            </svg>
+                        </div>
+                        <h3 class="steve-skill-title">Editing</h3>
+                        <p class="steve-skill-desc">Crafting compelling narratives through thoughtful post-production and storytelling.</p>
+                        <ul class="steve-skill-list">
+                            <li>Final Cut Pro</li>
+                            <li>Color Grading</li>
+                            <li>Sound Design</li>
+                        </ul>
+                    </div>
+                    <div class="steve-skill-card">
+                        <div class="steve-skill-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7" />
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                            </svg>
+                        </div>
+                        <h3 class="steve-skill-title">Directing</h3>
+                        <p class="steve-skill-desc">Leading productions from concept to completion with creative vision and practical expertise.</p>
+                        <ul class="steve-skill-list">
+                            <li>Documentary</li>
+                            <li>Corporate</li>
+                            <li>Educational</li>
+                        </ul>
+                    </div>
+                    <div class="steve-skill-card">
+                        <div class="steve-skill-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                        </div>
+                        <h3 class="steve-skill-title">Production</h3>
+                        <p class="steve-skill-desc">Comprehensive production management skills honed through years of broadcast television work.</p>
+                        <ul class="steve-skill-list">
+                            <li>BBC</li>
+                            <li>Channel 4</li>
+                            <li>Corporate Clients</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards Section -->
+        <section class="steve-awards-section">
+            <div class="container">
+                <div class="steve-awards-header">
+                    <span class="steve-section-label">Recognition</span>
+                    <h2 class="steve-section-title">Awards & Achievements</h2>
+                </div>
+                <div class="steve-awards-grid">
+                    <div class="steve-award-card steve-award-featured">
+                        <div class="steve-award-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                            </svg>
+                        </div>
+                        <span class="steve-award-year">BAFTA</span>
+                        <h3 class="steve-award-title">Best Single Documentary</h3>
+                        <p class="steve-award-desc">Won for directing the Video Diary 'The Man Who Loves Gary Lineker' during his time at the BBC.</p>
+                    </div>
+                    <div class="steve-award-card">
+                        <div class="steve-award-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </div>
+                        <span class="steve-award-year">UNICEF</span>
+                        <h3 class="steve-award-title">Rights of the Child</h3>
+                        <p class="steve-award-desc">Awarded for the impactful documentary 'Child Slave Rescue'.</p>
+                    </div>
+                    <div class="steve-award-card">
+                        <div class="steve-award-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                            </svg>
+                        </div>
+                        <span class="steve-award-year">BBC</span>
+                        <h3 class="steve-award-title">Series Producer</h3>
+                        <p class="steve-award-desc">Created the style and feel of first run factual series for major UK broadcasters.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="steve-cta-section">
+            <div class="container">
+                <div class="steve-cta-content">
+                    <h2 class="steve-cta-title">Ready to Tell Your Story?</h2>
+                    <p class="steve-cta-desc">Let's work together to bring your vision to life with compelling, honest filmmaking.</p>
+                    <div class="steve-cta-buttons">
+                        <a href="brief.html" class="steve-cta-btn-primary">Start a Project</a>
+                        <a href="contact.html" class="steve-cta-btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-modern">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <div class="relative size-full">
+                            <div class="absolute" style="top: 4.98%; right: 11.76%; bottom: 4.3%; left: 73.73%;"><svg class="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 18 38"><path d="M13.079 37.1375V19.6873H9.28948L4.71052 37.1375H0L4.97368 18.5128C3.94737 18.1493 3.10526 17.562 2.47368 16.751C1.8421 15.94 1.36842 14.9333 1.07895 13.7588C0.789475 12.5842 0.657895 11.2699 0.657895 9.84367C0.657895 7.49461 1.02632 5.593 1.76316 4.13882C2.5 2.68464 3.63158 1.62197 5.1579 0.978774C6.68421 0.307615 8.60527 0 10.9474 0H18V37.1934H13.079V37.1375ZM13.079 3.66341H10.9211C8.71053 3.66341 7.21053 4.13882 6.47369 5.11759C5.73684 6.0684 5.34211 7.66241 5.34211 9.81571C5.34211 11.4097 5.55263 12.6402 5.94737 13.5351C6.34211 14.4299 6.97369 15.0452 7.84211 15.4087C8.71053 15.7722 9.84211 15.968 11.2105 15.968H13.079V3.66341Z" fill="#D30000"/></svg></div>
+                            <div class="absolute" style="top: 9.17%; right: 1.97%; bottom: 50.83%; left: 90.62%;"><svg class="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 10 17"><path d="M8.13158 0.0171926L0 1.86288V6.19745L5.71053 5.07885V11.2871L0 10.1685V14.559L8.10526 16.3767C8.65789 16.5165 9.18421 16.0411 9.18421 15.4259V0.968002C9.21052 0.352772 8.68421 -0.0946673 8.13158 0.0171926Z" fill="#D30000"/></svg></div>
+                            <div class="absolute" style="top: 4.37%; right: 83.81%; bottom: 3.15%; left: 2%;"><svg class="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 18 38"><path d="M9.28947 37.9205C7.26316 37.9205 5.60526 37.4731 4.26316 36.5502C2.92105 35.6274 1.92105 34.369 1.21053 32.747C0.526316 31.125 0.105263 29.2514 0 27.0981L4.31579 25.8676C4.39474 27.182 4.60526 28.4404 4.89474 29.6708C5.18421 30.9013 5.68421 31.908 6.39474 32.6911C7.07895 33.4741 8.05263 33.8656 9.28947 33.8656C10.5526 33.8656 11.5263 33.502 12.1579 32.747C12.8158 31.9919 13.1316 30.9293 13.1316 29.5031C13.1316 27.8252 12.7632 26.4549 12.0526 25.4481C11.3421 24.4134 10.4211 23.3787 9.3421 22.344L3.44737 16.807C2.28947 15.7443 1.44737 14.5698 0.894737 13.2834C0.342105 12.0249 0.0789474 10.4589 0.0789474 8.58525C0.0789474 5.87265 0.81579 3.74731 2.28947 2.2372C3.76316 0.727089 5.76316 0 8.28947 0C9.68421 0 10.8947 0.195755 11.9474 0.587265C13 0.978774 13.8684 1.56604 14.5789 2.34906C15.2895 3.13208 15.8421 4.13882 16.2632 5.36928C16.6842 6.57177 16.9737 7.99798 17.1053 9.61995L12.9474 10.7945C12.8684 9.56402 12.6842 8.44542 12.4211 7.41072C12.1579 6.37602 11.7105 5.56503 11.0526 4.92184C10.3947 4.30661 9.47368 3.97103 8.26316 3.97103C7.05263 3.97103 6.10526 4.30661 5.42105 5.00573C4.73684 5.70486 4.39474 6.7116 4.39474 8.05391C4.39474 9.17251 4.57895 10.1233 4.94737 10.8504C5.31579 11.5775 5.89474 12.3326 6.68421 13.0876L12.6053 18.5967C13.9211 19.8272 15.1053 21.2813 16.1053 22.9872C17.1053 24.6931 17.6053 26.7066 17.6053 29.0276C17.6053 30.8733 17.2368 32.4394 16.5263 33.7817C15.8158 35.124 14.8158 36.1308 13.5789 36.8299C12.3684 37.5849 10.9211 37.9205 9.28947 37.9205Z" fill="white"/></svg></div>
+                            <div class="absolute" style="top: 5.18%; right: 65.73%; bottom: 4.1%; left: 19.31%;"><svg class="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 19 38"><path d="M0 37.1934V0H4.86842V17.534L12.8947 0H17.4211L10.5263 16.3875L18.5526 37.1934H13.7895L7.10526 19.7433L4.86842 24.0499V37.1655H0V37.1934Z" fill="white"/></svg></div>
+                            <div class="absolute" style="top: 5.18%; right: 52.31%; bottom: 4.1%; left: 36.55%;"><svg class="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 14 38"><path d="M0 37.1934V0H4.86842V33.4741H13.8158V37.1934H0Z" fill="white"/></svg></div>
+                            <div class="absolute" style="top: 5.18%; right: 35.36%; bottom: 4.1%; left: 48.83%;"><svg class="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 38"><path d="M0 37.1934L7.42105 0H12.1316L19.6053 37.1934H14.9737L13.3684 27.8252H6.23684L4.55263 37.1934H0ZM6.92105 24.1058H12.7632L9.81579 7.35479L6.92105 24.1058Z" fill="white"/></svg></div>
+                            <div class="absolute" style="top: 5.18%; right: 21.94%; bottom: 4.1%; left: 62.24%;"><svg class="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 38"><path d="M0 37.1934V0H4.86842V37.1934H0ZM6.68421 37.1934V0H11.5526V37.1934H6.68421ZM4.86842 20.6382V16.9189H11.5526V20.6382H4.86842ZM13.3684 37.1934V33.4741H19.7368V37.1934H13.3684ZM13.3684 3.71934V0H19.7368V3.71934H13.3684Z" fill="white"/></svg></div>
+                        </div>
+                    </a>
+                    <p class="footer-tagline">Award-winning filmmaker specializing in documentaries, corporate films, and compelling visual storytelling.</p>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/steve-sklair-3636b41/" target="_blank" rel="noopener" class="footer-social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="https://vimeo.com/stevesklair" target="_blank" rel="noopener" class="footer-social-link" aria-label="Vimeo">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M23.977 6.416c-.105 2.338-1.739 5.543-4.894 9.609-3.268 4.247-6.026 6.37-8.29 6.37-1.409 0-2.578-1.294-3.553-3.881L5.322 11.4C4.603 8.816 3.834 7.522 3.01 7.522c-.179 0-.806.378-1.881 1.132L0 7.197c1.185-1.044 2.351-2.084 3.501-3.128C5.08 2.701 6.266 1.984 7.055 1.91c1.867-.18 3.016 1.1 3.447 3.838.465 2.953.789 4.789.971 5.507.539 2.45 1.131 3.674 1.776 3.674.502 0 1.256-.796 2.265-2.385 1.004-1.589 1.54-2.797 1.612-3.628.144-1.371-.395-2.061-1.614-2.061-.574 0-1.167.121-1.777.391 1.186-3.868 3.434-5.757 6.762-5.637 2.473.06 3.628 1.664 3.493 4.797l-.013.01z"/></svg>
+                        </a>
+                        <a href="https://wa.me/447743671868" target="_blank" rel="noopener" class="footer-social-link" aria-label="WhatsApp">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="films.html">Films</a></li>
+                        <li><a href="steve.html">About Steve</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="brief.html">Documentary</a></li>
+                        <li><a href="brief.html">Corporate Films</a></li>
+                        <li><a href="brief.html">Music Videos</a></li>
+                        <li><a href="brief.html">Interviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Get in Touch</h3>
+                    <div class="footer-contact">
+                        <a href="tel:+447743671868" class="footer-contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            +44 7743 671868
+                        </a>
+                        <a href="mailto:steve_sklair@yahoo.co.uk" class="footer-contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            steve_sklair@yahoo.co.uk
+                        </a>
+                        <span class="footer-contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            London, United Kingdom
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2025 Steve Sklair LTD. All rights reserved.</p>
+                <p class="footer-credits">Camera · Editor · Director</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/447743671868" target="_blank" rel="noopener noreferrer"
+        class="fixed bottom-6 right-6 w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:opacity-90 transition-opacity z-50 bg-[#00c950]">
+        <svg viewBox="0 0 24 24" fill="white" width="32" height="32">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+        </svg>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
