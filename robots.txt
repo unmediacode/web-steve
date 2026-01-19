@@ -1,0 +1,10 @@
+# Robots.txt for stevesklair.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://stevesklair.com/sitemap.xml
+
+# Disallow admin/api paths
+Disallow: /api/
