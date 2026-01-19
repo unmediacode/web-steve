@@ -1,10 +1,10 @@
-# Robots.txt for stevesklair.com
+# Robots.txt for sklairfilms.com
 
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://stevesklair.com/sitemap.xml
+Sitemap: https://sklairfilms.com/sitemap.xml
 
 # Disallow admin/api paths
 Disallow: /api/
